@@ -1,0 +1,33 @@
+.admin {
+  &-container {
+    padding: 30px;
+  }
+
+  .mini-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .requests {
+    display: flex;
+    & > div {
+      margin: 10px;
+    }
+
+    &-header {
+      font-size: 18px;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  span {
+    display: block;
+  }
+
+  label {
+    display: block;
+  }
+}

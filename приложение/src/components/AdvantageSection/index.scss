@@ -1,0 +1,40 @@
+.advantage-section {
+  max-width: 360px;
+  padding: 0 20px;
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 60px 0px 15px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ffc222;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      content: "\f00c";
+      font-family: "icomoon";
+      font-size: 14px;
+      position: absolute;
+      top: 9px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  span {
+    line-height: 24px;
+    color: #d3d2d2;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+  }
+}

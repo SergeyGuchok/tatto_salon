@@ -1,0 +1,91 @@
+.reviews-section {
+  min-height: 600px;
+  padding: 40px 0;
+  .reviews-inner {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    & > div {
+      margin: 10px;
+    }
+  }
+
+  h2 {
+    padding-left: 140px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212020;
+    margin-bottom: 10px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: #ffc222;
+      left: 0;
+      top: 11px;
+    }
+
+    @media (max-width: 850px) {
+      text-align: center;
+      padding-left: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .rating {
+    display: flex;
+    margin-bottom: 15px;
+  }
+}
+
+.form_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+	background: #ffc222;;
+}
+
+.form_radio_btn label:hover {
+	color: #666;
+}
+
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+
+.feedback-form {
+  @media (max-width: 850px) {
+    flex-direction: column;
+    max-width: 1000px;
+
+    .feedback-form-left {
+      max-width: none;
+    }
+    .feedback-form-right {
+      max-width: none;
+    }
+  }
+}

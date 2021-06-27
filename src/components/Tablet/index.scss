@@ -1,0 +1,36 @@
+.tablet-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  text-align: center;
+  padding: 30px 20px 40px;
+  min-height: 435px;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  box-shadow: 0px 7px 24px 3px rgba(0,0,0,0.1);
+
+  @media (max-width: 400px) {
+    max-width: calc(100% - 10px)
+  }
+
+  img {
+    max-width: 65px;
+  }
+
+  .first {
+    margin: 24px 0;
+    color: #212020;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .second {
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+    padding: 0 10px;
+  }
+}

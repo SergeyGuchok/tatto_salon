@@ -1,0 +1,55 @@
+.top-bar {
+  background-color: #303030;
+}
+
+.top-bar .top-bar-contacts a {
+  text-align: center;
+  color: #cbcacb;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 24px;
+  letter-spacing: 0.25px;
+  line-height: 45px;
+  position: relative;
+}
+
+.top-bar .top-bar-contacts a:first-child {
+  margin-right: 30px;
+}
+
+.top-bar .top-bar-contacts a:first-child::before {
+  content: "\f095";
+  font-family: "icomoon";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+.top-bar .top-bar-contacts a:nth-child(2)::before {
+  content: "\f003";
+  font-family: "icomoon";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+
+.top-bar .top-bar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .top-bar-container {
+    flex-direction: column;
+  }
+  .top-bar-contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & > a {
+      flex-shrink: 0;
+    }
+  }
+}
